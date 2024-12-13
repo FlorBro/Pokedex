@@ -1,0 +1,328 @@
+{
+  "#1": {
+    "name": "Bulbizarre",
+    "description": "Au début de sa vie, il se nourrit des nutriments accumulés dans la graine sur son dos. Cela lui permet de grandir.",
+    "type": "Plante",
+    "type2": "Poison"
+  },
+  "#2": {
+    "name": "Herbizarre",
+    "description": "Plus il s’expose au soleil, plus il emmagasine d’énergie, ce qui permet au bourgeon sur son dos de se développer.",
+    "type": "Plante",
+    "type2": "Poison"
+  },
+  "#3": {
+    "name": "Florizarre",
+    "description": "Ce Pokémon est capable de transformer la lumière du soleil en énergie. Il est donc encore plus fort en été.",
+    "type": "Plante",
+    "type2": "Poison"
+  },
+  "#4": {
+    "name": "Salamèche",
+    "description": "La flamme au bout de sa queue représente sa vitalité. Quand Salamèche n’est pas au meilleur de sa forme, elle faiblit.",
+    "type": "Feu",
+    "type2": null
+  },
+  "#5": {
+    "name": "Reptincel",
+    "description": "En agitant sa queue enflammée, il peut élever la température ambiante de manière exponentielle et ainsi tourmenter ses adversaires.",
+    "type": "Feu",
+    "type2": null
+  },
+  "#6": {
+    "name": "Dracaufeu",
+    "description": "Ses ailes lui permettent de voler très haut dans le ciel. Plus il accumule d’expérience en combat, plus la température de ses flammes augmente.",
+    "type": "Feu",
+    "type2": "Vol"
+  },
+  "#7": {
+    "name": "Carapuce",
+    "description": "Ce Pokémon crache une écume redoutable. Après sa naissance, son dos gonfle et durcit pour former une carapace.",
+    "type": "Eau",
+    "type2": null
+  },
+  "#8": {
+    "name": "Carabaffe",
+    "description": "L'évolution de Carapuce. Ses pattes et sa queue sont devenues plus musclées.",
+    "type": "Eau",
+    "type2": null
+  },
+  "#9": {
+    "name": "Tortank",
+    "description": "L'évolution finale de Carapuce. Il possède des canons sur son dos pour projeter de l'eau à haute pression.",
+    "type": "Eau",
+    "type2": null
+  },
+  "#10": {
+    "name": "Chenipan",
+    "description": "Un Pokémon de type Insecte. Il se nourrit principalement de feuilles et peut libérer un fil de soie pour se défendre.",
+    "type": "Insecte",
+    "type2": null
+  },
+  "#11": {
+    "name": "Chrysacier",
+    "description": "Un Pokémon de type Insecte. Il se cache dans sa chrysalide pour évoluer en Papilusion.",
+    "type": "Insecte",
+    "type2": null
+  },
+  "#12": {
+    "name": "Papilusion",
+    "description": "L'évolution finale de Chrysacier. Ce Pokémon de type Insecte et Vol vole avec des ailes colorées et délicates.",
+    "type": "Insecte",
+    "type2": "Vol"
+  },
+  "#13": {
+    "name": "Aspicot",
+    "description": "Un Pokémon de type Insecte et Poison. Il a un dard sur la tête et une queue pour se défendre.",
+    "type": "Insecte",
+    "type2": "Poison"
+  },
+  "#14": {
+    "name": "Coconfort",
+    "description": "L'évolution d'Aspicot. Son corps durci le protège des attaques en attendant d'évoluer.",
+    "type": "Insecte",
+    "type2": "Poison"
+  },
+  "#15": {
+    "name": "Dardargnan",
+    "description": "L'évolution finale d'Aspicot. Il utilise ses dards pour attaquer rapidement et avec précision.",
+    "type": "Insecte",
+    "type2": "Poison"
+  },
+  "#16": {
+    "name": "Roucool",
+    "description": "Un Pokémon de type Normal et Vol. Il utilise ses ailes pour créer de petites bourrasques.",
+    "type": "Normal",
+    "type2": "Vol"
+  },
+  "#17": {
+    "name": "Roucoups",
+    "description": "L'évolution de Roucool. Ses ailes puissantes lui permettent de voler de longues distances.",
+    "type": "Normal",
+    "type2": "Vol"
+  },
+  "#18": {
+    "name": "Roucarnage",
+    "description": "L'évolution finale de Roucool. Il est connu pour sa vitesse et son endurance en vol.",
+    "type": "Normal",
+    "type2": "Vol"
+  },
+  "#19": {
+    "name": "Rattata",
+    "description": "Un Pokémon de type Normal. Il est très agile et peut ronger presque tout avec ses dents.",
+    "type": "Normal",
+    "type2": null
+  },
+  "#20": {
+    "name": "Rattatac",
+    "description": "L'évolution de Rattata. Ses dents puissantes peuvent broyer n'importe quelle surface.",
+    "type": "Normal",
+    "type2": null
+  },
+  "#21": {
+    "name": "Piafabec",
+    "description": "Un Pokémon de type Normal et Vol. Il émet des cris perçants pour marquer son territoire.",
+    "type": "Normal",
+    "type2": "Vol"
+  },
+  "#22": {
+    "name": "Rapasdepic",
+    "description": "Évolution de Piafabec. Rapide et agressif, il plane à haute altitude pour repérer ses proies.",
+    "type": "Normal",
+    "type2": "Vol"
+  },
+  "#23": {
+    "name": "Abo",
+    "description": "Un serpent venimeux qui peut se camoufler dans les herbes hautes pour surprendre ses proies.",
+    "type": "Poison",
+    "type2": null
+  },
+  "#24": {
+    "name": "Arbok",
+    "description": "Évolution d'Abo. Il peut intimider ses adversaires en élargissant les motifs sur son torse.",
+    "type": "Poison",
+    "type2": null
+  },
+  "#25": {
+    "name": "Pikachu",
+    "description": "Un Pokémon populaire capable de générer de l'électricité depuis ses joues.",
+    "type": "Électrik",
+    "type2": null
+  },
+  "#26": {
+    "name": "Raichu",
+    "description": "Évolution de Pikachu. Ses décharges électriques peuvent atteindre une intensité dévastatrice.",
+    "type": "Électrik",
+    "type2": null
+  },
+  "#27": {
+    "name": "Sabelette",
+    "description": "Il vit dans les déserts et se protège de la chaleur grâce à sa peau résistante.",
+    "type": "Sol",
+    "type2": null
+  },
+  "#28": {
+    "name": "Sablaireau",
+    "description": "Évolution de Sabelette. Ses griffes sont très acérées et idéales pour creuser.",
+    "type": "Sol",
+    "type2": null
+  },
+  "#29": {
+    "name": "Nidoran♀",
+    "description": "Un Pokémon prudent dont les petites pointes sont venimeuses.",
+    "type": "Poison",
+    "type2": null
+  },
+  "#30": {
+    "name": "Nidorina",
+    "description": "Évolution de Nidoran♀. Plus calme, elle protège férocement ses petits.",
+    "type": "Poison",
+    "type2": null
+  },
+  "#31": {
+    "name": "Nidoqueen",
+    "description": "Évolution finale de Nidoran♀. Sa force et sa défense sont impressionnantes.",
+    "type": "Poison",
+    "type2": "Sol"
+  },
+  "#32": {
+    "name": "Nidoran♂",
+    "description": "Un Pokémon mâle aux pointes empoisonnées, souvent utilisé pour se défendre.",
+    "type": "Poison",
+    "type2": null
+  },
+  "#33": {
+    "name": "Nidorino",
+    "description": "Évolution de Nidoran♂. Ses cornes puissantes peuvent infliger un poison mortel.",
+    "type": "Poison",
+    "type2": null
+  },
+  "#34": {
+    "name": "Nidoking",
+    "description": "Évolution finale de Nidoran♂. Un Pokémon puissant à la force colossale.",
+    "type": "Poison",
+    "type2": "Sol"
+  },
+  "#35": {
+    "name": "MéloFee",
+    "description": "Un Pokémon rare connu pour son apparence mignonne et ses pouvoirs lunaires.",
+    "type": "Fee",
+    "type2": null
+  },
+  "#36": {
+    "name": "Mélodelfe",
+    "description": "Évolution de MéloFee. Ce Pokémon mystérieux est souvent vu dans les montagnes.",
+    "type": "Fee",
+    "type2": null
+  },
+  "#37": {
+    "name": "Goupix",
+    "description": "Ses six queues dégagent de la chaleur. Quand Goupix grandit, elles embellissent et leur fourrure devient plus épaisse.",
+    "type": "Feu",
+    "type2": null
+  },
+  "#38": {
+    "name": "Feunard",
+    "description": "Selon la légende, chacune de ses neuf queues posséderait un pouvoir magique unique.",
+    "type": "Feu",
+    "type2": null
+  },
+  "#39": {
+    "name": "Rondoudou",
+    "description": "Quand ses grands yeux luisent, il chante une berceuse mystérieuse et agréable qui pousse ses ennemis à s’endormir.",
+    "type": "Normal",
+    "type2": "Fee"
+  },
+  "#40": {
+    "name": "Grodoudou",
+    "description": "Il a une très belle fourrure. Mieux vaut éviter de le mettre en colère, ou il gonflera avant d’attaquer de tout son corps.",
+    "type": "Normal",
+    "type2": "Fee"
+  },
+  "#41": {
+    "name": "Nosferapti",
+    "description": "Il sonde les environs en émettant des ultrasons avec sa bouche, et peut ainsi se frayer un chemin même dans les grottes les plus étroites.",
+    "type": "Poison",
+    "type2": "Vol"
+  },
+  "#42": {
+    "name": "Nosferalto",
+    "description": "Le sang des êtres vivants est son péché mignon. On dit qu’il partage parfois ce précieux breuvage avec ses congénères affamés.",
+    "type": "Poison",
+    "type2": "Vol"
+  },
+  "#43": {
+    "name": "Mystherbe",
+    "description": "Un Pokémon nocturne de type Plante et Poison, qui absorbe la lumière pour se nourrir.",
+    "type": "Plante",
+    "type2": "Poison"
+  },
+  "#44": {
+    "name": "Ortide",
+    "description": "Évolution de Mystherbe. Ses fleurs dégagent un parfum puissant qui peut endormir ses ennemis.",
+    "type": "Plante",
+    "type2": "Poison"
+  },
+  "#45": {
+    "name": "Rafflesia",
+    "description": "Évolution finale de Mystherbe. Ses grandes fleurs contiennent des spores toxiques.",
+    "type": "Plante",
+    "type2": "Poison"
+  },
+  "#46": {
+    "name": "Paras",
+    "description": "Un Pokémon Insecte et Plante, dont les champignons sur son dos sont précieux.",
+    "type": "Insecte",
+    "type2": "Plante"
+  },
+  "#47": {
+    "name": "Parasect",
+    "description": "Évolution de Paras. Le champignon sur son dos contrôle ses actions.",
+    "type": "Insecte",
+    "type2": "Plante"
+  },
+  "#48": {
+    "name": "Mimitoss",
+    "description": "Un Pokémon Insecte et Poison, qui repère ses ennemis grâce à ses grands yeux.",
+    "type": "Insecte",
+    "type2": "Poison"
+  },
+  "#49": {
+    "name": "Aéromite",
+    "description": "Évolution de Mimitoss. Il utilise ses ailes pour disperser des spores toxiques.",
+    "type": "Insecte",
+    "type2": "Poison"
+  },
+  "#50": {
+    "name": "Taupiqueur",
+    "description": "Un Pokémon de type Sol qui creuse des tunnels pour se déplacer rapidement.",
+    "type": "Sol",
+    "type2": null
+  },
+  "#51": {
+    "name": "Triopikeur",
+    "description": "Évolution de Taupiqueur. Ses trois têtes travaillent ensemble pour creuser.",
+    "type": "Sol",
+    "type2": null
+  },
+  "GlobalType": {
+    "Acier": "https://www.pokepedia.fr/images/thumb/2/27/Miniature_Type_Acier_EV.png/80px-Miniature_Type_Acier_EV.png",
+    "Combat": "https://www.pokepedia.fr/images/thumb/9/96/Miniature_Type_Combat_EV.png/80px-Miniature_Type_Combat_EV.png",
+    "Dragon": "https://www.pokepedia.fr/images/thumb/3/3d/Miniature_Type_Dragon_EV.png/80px-Miniature_Type_Dragon_EV.png",
+    "Eau": "https://www.pokepedia.fr/images/thumb/3/3d/Miniature_Type_Eau_EV.png/80px-Miniature_Type_Eau_EV.png",
+    "Electrik": "https://www.pokepedia.fr/images/thumb/6/6d/Miniature_Type_%C3%89lectrik_EV.png/80px-Miniature_Type_%C3%89lectrik_EV.png",
+    "Fee": "https://www.pokepedia.fr/images/thumb/5/58/Miniature_Type_F%C3%A9e_EV.png/80px-Miniature_Type_F%C3%A9e_EV.png",
+    "Feu": "https://www.pokepedia.fr/images/thumb/c/c7/Miniature_Type_Feu_EV.png/80px-Miniature_Type_Feu_EV.png",
+    "Glace": "https://www.pokepedia.fr/images/thumb/e/e7/Miniature_Type_Glace_EV.png/80px-Miniature_Type_Glace_EV.png",
+    "Insecte": "https://pokepedia.fr/images/thumb/a/a9/Miniature_Type_Insecte_EV.png/80px-Miniature_Type_Insecte_EV.png",
+    "Normal": "https://www.pokepedia.fr/images/thumb/b/bf/Miniature_Type_Normal_EV.png/80px-Miniature_Type_Normal_EV.png",
+    "Plante": "https://www.pokepedia.fr/images/thumb/d/d9/Miniature_Type_Plante_EV.png/80px-Miniature_Type_Plante_EV.png",
+    "Poison": "https://www.pokepedia.fr/images/thumb/1/1c/Miniature_Type_Poison_EV.png/80px-Miniature_Type_Poison_EV.png",
+    "Psy": "https://www.pokepedia.fr/images/thumb/8/81/Miniature_Type_Psy_EV.png/80px-Miniature_Type_Psy_EV.png",
+    "Roche": "https://www.pokepedia.fr/images/thumb/f/fe/Miniature_Type_Roche_EV.png/80px-Miniature_Type_Roche_EV.png",
+    "Sol": "https://www.pokepedia.fr/images/thumb/4/40/Miniature_Type_Sol_EV.png/80px-Miniature_Type_Sol_EV.png",
+    "Spectre": "https://www.pokepedia.fr/images/thumb/4/43/Miniature_Type_Spectre_EV.png/80px-Miniature_Type_Spectre_EV.png",
+    "Tenebres": "https://www.pokepedia.fr/images/thumb/b/bc/Miniature_Type_T%C3%A9n%C3%A8bres_EV.png/80px-Miniature_Type_T%C3%A9n%C3%A8bres_EV.png",
+    "Vol": "https://www.pokepedia.fr/images/thumb/9/99/Miniature_Type_Vol_EV.png/80px-Miniature_Type_Vol_EV.png"
+  }
+}
