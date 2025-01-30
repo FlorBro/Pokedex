@@ -8,13 +8,12 @@ import json
 import requests
 class MyWidget(QMainWindow):
     def __init__(self):
-        global current_working_directory
-        current_working_directory = os.path.dirname(os.path.abspath(__file__))
+        self.current_working_directory = os.path.dirname(os.path.abspath(__file__))
         super().__init__()
         self.widget_contenu = QWidget()
         # Configuration de la fenêtre
         self.setWindowTitle("Pokedex")
-        self.setGeometry(460, 240, 500, 300)
+        self.setGeometry(560, 340, 600, 400)
         self.setMaximumSize(QSize(1000,1000))
         self.main_layout =QVBoxLayout(self.widget_contenu)
         # Layout principal
@@ -38,7 +37,7 @@ class MyWidget(QMainWindow):
         self.search_layout.addWidget(self.searchButton)
         self.search_layout.addWidget(self.CancelButton)
         self.main_layout.addLayout(self.search_layout)
-        with open(f"{current_working_directory}\\Pokedex_descriptif.json",'r',encoding='utf-8') as file:
+        with open(f"{self.current_working_directory}\\Pokedex_descriptif.json",'r',encoding='utf-8') as file:
             self.data = json.load(file)
         self.number = 1  # Initialisation en dehors de la boucle
         self.total = 0
@@ -62,8 +61,70 @@ class MyWidget(QMainWindow):
         self.LoadButton= QPushButton('Charger plus')
         self.LoadButton.setFixedWidth(150)
         self.LoadButton.clicked.connect(self.load)
-        self.main_layout.addWidget(self.LoadButton)    
+        self.main_layout.addWidget(self.LoadButton)
         
+        # Creating menus using a QMenu object
+        menuBar = self.menuBar()
+        self.fileMenu = QMenu("&Type", self)
+        menuBar.addMenu(self.fileMenu)
+        self.filterbuttonlist= {}
+        #Bouton pour chaque type 
+        for type in self.data["GlobalType"].keys():
+            self.button_action = QAction(f"&{type}", self)
+            self.button_action.setStatusTip("Type")
+            self.button_action.triggered.connect(lambda checked ,type=type: self.filterbutton(checked,type))
+            self.button_action.setCheckable(True)
+            self.fileMenu.addAction(self.button_action)
+    def filterbutton(self, s, type):
+        actions = self.fileMenu.actions()
+        for action in actions:
+            if action.isChecked() and action.text() != f"&{type}":
+                action.setChecked(False)
+                self.supprimerwidget()                
+        if s:  # Si le bouton est activé
+            self.filterbuttonlist[type] = self.button_action
+            newgroup= QHBoxLayout()
+            # Cacher tous les widgets Pokémon
+            listdexception = [Numberexception for Numberexception in self.data if Numberexception != 'GlobalType']
+            for key in listdexception:
+                try:
+                    self.labelValuelist[key].hide()
+                    self.buttonlist[key].hide()
+                    self.numlist[key].hide()
+                except:
+                    pass
+            self.LoadButton.hide()
+
+            # Afficher uniquement les Pokémon du type sélectionné
+            self.filtered_widgets = []  # Stocker les widgets filtrés pour suppression ultérieure
+            number = 1
+            for new in self.data:
+                if new != 'GlobalType' and self.data[new]['type'] == type:
+                    searchwidget = self.Pokemon_widget(self.data, new, number, True)
+                    newgroup.addWidget(searchwidget)
+                    self.filtered_widgets.append(searchwidget)
+                    if number %3==0:
+                        self.main_layout.addLayout(newgroup)
+                        newgroup= QHBoxLayout()  # Ajouter au suivi
+                number += 1
+            if number % 3 != 1:
+                self.main_layout.addLayout(newgroup)
+        else:  # Si le bouton est désactivé, réinitialiser la vue
+            self.supprimerwidget()
+    def supprimerwidget(self):
+        # Supprimer les widgets filtrés
+        if hasattr(self, "filtered_widgets"):
+            for widget in self.filtered_widgets:
+                self.main_layout.removeWidget(widget)
+                widget.deleteLater()
+            self.filtered_widgets = []  # Réinitialiser la liste
+
+        # Réafficher tous les Pokémon
+        for key in self.labelValuelist:
+            self.labelValuelist[key].show()
+            self.buttonlist[key].show()
+            self.numlist[key].show()  
+        self.LoadButton.show()            
     def load(self):
         self.count = 0
         self.main_layout.removeWidget(self.LoadButton)
@@ -185,16 +246,24 @@ class MyWidget(QMainWindow):
     def PokemonSuivant(self,Suivant,tag):
         if Suivant :
             self.msg_box.close()
-            tag = int(tag.split('#')[1])+1
-            tag=f'#{tag}'
-            self.validate_inputs(tag,self.keepPixmap[tag])
+            n = int(tag.split('#')[1])+1
+            tag=f'#{n}'
+            try:
+                self.validate_inputs(tag,self.keepPixmap[tag])
+            except : 
+                self.Pokemon_widget(self.data,tag,n,False)
+                self.validate_inputs(tag,self.keepPixmap[tag])
         else : 
             self.msg_box.close()
-            tag = int(tag.split('#')[1])-1
-            tag=f'#{tag}'
-            self.validate_inputs(tag,self.keepPixmap[tag])
+            n = int(tag.split('#')[1])-1
+            tag=f'#{n}'
+            try:
+                self.validate_inputs(tag,self.keepPixmap[tag])
+            except : 
+                self.Pokemon_widget(self.data,tag,n,False)
+                self.validate_inputs(tag,self.keepPixmap[tag])
     def validate_inputs(self,tag,pxmp):
-        with open(f"{current_working_directory}\\Pokedex_descriptif.json",'r',encoding='utf-8') as file:
+        with open(f"{self.current_working_directory}\\Pokedex_descriptif.json",'r',encoding='utf-8') as file:
             data = json.load(file)
         Poketype= data[tag]['type']
         self.msg_box = QMessageBox(self)
